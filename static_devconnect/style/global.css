@@ -1,0 +1,55 @@
+/*primeira fomra de utilizar uma fonte*/
+/* @import url('https://fonts.googleapis.com/css2?family=Baskervville+SC:wght@400..700&family=Baskervville:ital,wght@0,400..700;1,400..700&family=Orbit&display=swap'); */
+
+/*segunda forma de utilizar a fonte*/
+@font-face {
+    font-family: Baskervville;
+    src: url(../assets/fonts/Baskervville/Baskervville-Italic-VariableFont_wght.ttf),
+        url(../assets/fonts/Baskervville/Baskervville-VariableFont_wght.ttf);
+}
+
+/*variáveis*/
+
+:root {
+    --cor-preto: #1E1E1E;
+    --cor-cinza-escuro1: #222222;
+    --cor-cinza-escuro2: #333333;
+    --cor-cinza-escuro3: #222222;
+    --cor-cinza-medio1: #4B4B4B;
+    --cor-cinza-medio2: #A0A0A0;
+    --cor-branca: #F4F4F4;
+    --cor-azul: #2563EB;
+    --cor-azul-escuro: #1E3A8A;
+
+    --borda: 1px solid var(--cor-cinza-medio2);
+
+    --tamanho-fonte-lg: 20px;
+    --tamanho-fonte-md: 16px;
+    --tamanho-fonte-sm: 14px;
+}
+
+/*SELETOR GLOBAL*/
+
+* {
+    padding: 0;
+    /*espaço interno*/
+    margin: 0;
+    /*espaço externo*/
+    box-sizing: border-box;
+    /*atribui espaços internos/externos e bordas no tamanho final do box*/
+    font-family: "Baskervville", sans-serif;
+    font-family: "Baskervville SC", serif;
+    font-family: "Orbit", sans-serif;
+
+}
+
+body {
+    background-color: var(--cor-preto);
+}
+
+h1 {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+
+}
