@@ -1,4 +1,4 @@
-/*primeira fomra de utilizar uma fonte*/
+/*primeira forma de utilizar uma fonte*/
 /* @import url('https://fonts.googleapis.com/css2?family=Baskervville+SC:wght@400..700&family=Baskervville:ital,wght@0,400..700;1,400..700&family=Orbit&display=swap'); */
 
 /*segunda forma de utilizar a fonte*/
@@ -14,7 +14,6 @@
     --cor-preto: #1E1E1E;
     --cor-cinza-escuro1: #222222;
     --cor-cinza-escuro2: #333333;
-    --cor-cinza-escuro3: #222222;
     --cor-cinza-medio1: #4B4B4B;
     --cor-cinza-medio2: #A0A0A0;
     --cor-branca: #F4F4F4;
@@ -22,6 +21,7 @@
     --cor-azul-escuro: #1E3A8A;
 
     --borda: 1px solid var(--cor-cinza-medio2);
+    --borda-arredondada: 3px;
 
     --tamanho-fonte-lg: 20px;
     --tamanho-fonte-md: 16px;
@@ -51,5 +51,48 @@ h1 {
     position: absolute;
     z-index: -1;
     opacity: 0;
+}
 
+/*formulário*/
+
+.formulario-botao-azul, .botao-cadastro{
+background-color: var(--cor-azul-escuro);
+border-radius: var(--borda-arredondada);
+border: none; /*tira a borda*/
+height: 35px;
+
+color: var(--cor-branca);
+font-size: var(--tamanho-fonte-sm);
+}
+
+.formulario-campos> input{
+    border: var(--borda);
+    height: 35px;
+    background-color: var(--cor-cinza-escuro2);
+
+    color: var(--cor-branca);
+    font-size: var(--tamanho-fonte-sm);
+    border-radius: var(--borda-arredondada);
+}
+
+.formulario-campos> label{
+font-size: var(--tamanho-fonte-sm);
+color: var(--cor-branca);
+font-weight: 600; /**/
+}
+
+.formulario-cadastro> input{
+    border: var(--borda);
+    height: 35px;
+    background-color: var(--cor-cinza-escuro2);
+
+    color: var(--cor-branca);
+    font-size: var(--tamanho-fonte-sm);
+    border-radius: var(--borda-arredondada);
+}
+
+.formulario-cadastro> label{
+font-size: var(--tamanho-fonte-sm);
+color: var(--cor-branca);
+font-weight: 600; /**/
 }
