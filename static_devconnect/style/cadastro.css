@@ -8,7 +8,7 @@ main {
 }
 
 main>div {
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,14 +20,14 @@ form {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
     padding: 3%;
 }
 
 .formulario-cadastro {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     gap: 10px;
 }
 
@@ -70,7 +70,7 @@ main>div>p {
     background-color: var(--cor-cinza-escuro1);
     border: var(--borda);
     width: 100%;
-    max-width: 500px;
+    max-width: 450px;
 }
 
 #campo-upload{
