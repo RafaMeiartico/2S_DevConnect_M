@@ -57,14 +57,11 @@ form>a,
 }
 
 .estilo-formulario {
-    background-color: var(--cor-cinza-escuro1);
-    border: var(--borda);
-    width: 100%;
     max-width: 342px;
 }
 
 #secao-cadastro {
-    height: 60px;
+    height: 60px; 
     display: flex;
     justify-content: center;
     align-items: center;

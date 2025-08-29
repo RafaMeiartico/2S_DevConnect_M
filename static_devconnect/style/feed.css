@@ -1,0 +1,64 @@
+main {
+    /* background-color: brown; */
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container-flex-publi {
+    background-color: blue;
+    height: 700px;
+    width: 100%;
+    max-width: 900px;
+}
+
+#storys {
+    /* background-color: chartreuse; */
+    width: 100%;
+    /* height: 300px; */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+    gap: 30px;
+}
+
+#storys::-webkit-scrollbar {
+    width: 0;
+}
+
+.card-story {
+    /* background-color: aqua; */
+}
+
+.card-story>button {
+    background-color: transparent;
+    border: none;
+
+    font-size: var(--tamanho-fonte-sm);
+    color: brown;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.card-story>button>img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+
+/*seção criar publi */
+
+.formulario-botao-azul {
+    width: 150px;
+
+}
