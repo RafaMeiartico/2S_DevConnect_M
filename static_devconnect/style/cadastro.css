@@ -15,25 +15,16 @@ main>div {
     gap: 15px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    padding: 3%;
-}
 
 .formulario-cadastro {
     display: flex;
     flex-direction: column;
-    width: 90%;
     gap: 10px;
 }
 
-.botao-cadastro {
-    margin-top: 35px;
-    width: 100%;
+.formulario-botao-azul{
+    margin-top: 25px;
+    width: 87%;
 }
 
 form>p {
@@ -51,10 +42,18 @@ form>p {
 
 #secao-conectar>p {
     color: var(--cor-branca);
-     font-size: var(--tamanho-fonte-md);
+    font-size: var(--tamanho-fonte-md);
 }
 
-#secao-conectar{
+.formulario-cadastro>input {
+    border: var(--borda);
+}
+
+#botao-upload {
+    margin-top: 15px;
+}
+
+#secao-conectar {
     height: 60px;
     display: flex;
     justify-content: center;
@@ -70,7 +69,15 @@ main>div>p {
     background-color: var(--cor-cinza-escuro1);
     border: var(--borda);
     width: 100%;
-    max-width: 450px;
+    max-width: 420px;
+    display: flex;
+    justify-content: center;
 }
-
-
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 3%;
+}

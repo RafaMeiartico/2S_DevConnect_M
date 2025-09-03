@@ -37,10 +37,8 @@
     /*espaço externo*/
     box-sizing: border-box;
     /*atribui espaços internos/externos e bordas no tamanho final do box*/
-    font-family: "Baskervville", sans-serif;
     font-family: "Baskervville SC", serif;
-    font-family: "Orbit", sans-serif;
-
+    outline-color: var(--cor-azul);
 }
 
 body {
@@ -85,29 +83,30 @@ h1 {
 
 .estilo-formulario {
     width: 100%;
-    background-color: var(--cor-preto);
+    background-color: var(--cor-cinza-escuro1);
     border: var(--borda);
 
 }
 
-#campo-upload{
+#campo-upload {
     display: none;
 }
 
-#botao-upload{
-    background-color: rosybrown;
-    height: 35px;
+#botao-upload {
+    width: 100%;
+    max-width: 300px;
+    min-height: 35px;
+    padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: var(--borda);
     border-radius: var(--borda-arredondada);
     background-color: var(--cor-cinza-escuro2);
-    margin-top: 15px;
+    font-weight: 500;
 }
 
-label{
+label {
     display: inline-block;
     width: 300px;
 }
@@ -115,8 +114,8 @@ label{
 /*cadastro*/
 
 .formulario-cadastro>input {
-    border: var(--borda);
-    height: 35px;
+    width: 100%;
+    min-height: 35px;
     background-color: var(--cor-cinza-escuro2);
 
     color: var(--cor-branca);
@@ -128,12 +127,11 @@ label{
     font-size: var(--tamanho-fonte-sm);
     color: var(--cor-branca);
     font-weight: 600;
-    /**/
 }
 
 /*Cabeçalho*/
 #cabecalho {
-    background-color: aqua;
+    background-color: var(--cor-preto);
     width: 100%;
     height: 80px;
     display: flex;
@@ -142,7 +140,7 @@ label{
 }
 
 #cabecalho>nav {
-    background-color: #90a8dc;
+    background-color: var(--cor-preto);
     width: 85%;
     max-width: 900px;
     height: 100%;
@@ -158,7 +156,7 @@ label{
 }
 
 .cabecalho-acoes {
-    background-color: aquamarine;
+    background-color: var(--cor-preto);
     display: flex;
     align-items: center;
     gap: 15px
@@ -169,7 +167,7 @@ label{
     align-items: center;
 }
 
-#foto-perfil {
+.foto-perfil {
     width: 40px;
     height: 40px;
     object-fit: cover;
