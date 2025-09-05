@@ -133,6 +133,7 @@ header {
 .card-publi>figure {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .imagem-publicacao {
@@ -191,9 +192,6 @@ header {
     font-size: var(--tamanho-fonte-sm);
 
     order: 3;
-
-    display: flex;
-    justify-content: start;
 
     margin-left: 15px;
 }
