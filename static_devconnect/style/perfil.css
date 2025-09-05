@@ -1,0 +1,159 @@
+main {
+    background-color: var(--cor-preto);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cabecalho-mobile{
+    display: none;
+}
+
+#perfil {
+    width: 90%;
+    max-width: 900px;
+    background-color: var(--cor-preto);
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+
+} 
+
+
+.perfil-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    padding-bottom: 20px; 
+    border-bottom: var(--borda);
+}
+
+
+#foto-perfil-desktop {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+#foto-perfil-mobile {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+#descricao-perfil {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+h2 {
+    color: var(--cor-branca);
+}
+
+#perfil-dados{
+    width: 330px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#perfil-dados>a {
+    color: var(--cor-branca);
+    font-size: var(--tamanho-fonte-md);
+    text-decoration: none;
+}
+
+#perfil-info{
+    width: 330px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+#perfil-info>span {
+    color: var(--cor-branca);
+    font-size: var(--tamanho-fonte-md);
+}
+
+#perfil-info>a {
+    color: var(--cor-azul);
+    font-size: var(--tamanho-fonte-md);
+    text-decoration: none;
+}
+
+#perfil-post{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+}
+
+#grade-publicacao {
+    color: var(--cor-branca);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#grade-publicacao>h3 {
+    font-size: var(--tamanho-fonte-lg);
+}
+
+.publicacao {
+    background-color: var(--cor-cinza-escuro1);
+    width: 80%;
+    height: auto;
+
+    padding: 15px;
+    border: var(--borda);
+    
+}
+
+.publicacao > header > a{
+    color: var(--cor-branca);
+    font-size: var(--tamanho-fonte-md);
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.publicacao > p{
+    color: var(--cor-branca);
+    font-size: var(--tamanho-fonte-sm);
+
+    margin: 10px;
+}
+
+#botao-comentarios{
+    background-color: transparent;
+    border: none;
+    color: var(--cor-cinza-escuro2);
+    font-size: var(--tamanho-fonte-sm);
+    order: 3;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+
+
+/*RESPONSIVO*/
+
+@media only screen and (max-width: 500px) {
+    .cabecalho-mobile {
+        display: initial;
+    }
+
+    .cabecalho-desktop{
+        display: none;
+    }
+
+}

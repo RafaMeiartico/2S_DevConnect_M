@@ -47,8 +47,17 @@ body {
 
 h1 {
     position: absolute;
-    z-index: -1;
+    z-index: -1;    
     opacity: 0;
+}
+
+.container-flex-publi {
+    background-color: var(--cor-preto);   
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 /*formulário*/
@@ -130,12 +139,14 @@ label {
 }
 
 /*Cabeçalho*/
+
 #cabecalho {
     background-color: var(--cor-preto);
     width: 100%;
     height: 80px;
     display: flex;
-    justify-content: center;
+    justify-content: center;   
+     border-bottom: var(--borda);
     /*alinha os filhos na direção do flex*/
 }
 
@@ -148,7 +159,7 @@ label {
     align-items: center;
     /*alinha os filhos na direção contraria do flex*/
     justify-content: space-between;
-    border-bottom: var(--borda);
+
 }
 
 #logo-mobile {
@@ -176,6 +187,28 @@ label {
     border-radius: 50%;
 }
 
+/*botões de publicacao*/
+
+.interacoes-publicacao {
+    display: flex;
+    width: 100px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    order: 1;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.interacoes-publicacao>button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    /*mãozinha quando passa em cima*/
+}
+
+.interacoes-publicacao>span{
+    color: var(--cor-branca);
+}
 
 
 

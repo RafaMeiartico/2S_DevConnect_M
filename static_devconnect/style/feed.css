@@ -4,18 +4,10 @@ main {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 20px;   
 }
 
-.container-flex-publi {
-    background-color: var(--cor-preto);
-    /* height: 700px; */
-    width: 100%;
-    max-width: 900px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
+
 
 #storys {
     background-color: var(--cor-cinza-escuro1);
@@ -163,26 +155,7 @@ header {
 }
 
 
-.interacoes-publicacao {
-    display: flex;
-    width: 100px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    order: 1;
-    margin-left: 15px;
-    margin-top: 15px;
-}
 
-.interacoes-publicacao>button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    /*mãozinha quando passa em cima*/
-}
-
-.interacoes-publicacao>span{
-    color: var(--cor-branca);
-}
 
 .card-publi>figure>button {
     background-color: transparent;
