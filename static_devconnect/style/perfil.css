@@ -7,10 +7,6 @@ main {
     margin-top: 20px;
 }
 
-.cabecalho-mobile{
-    display: none;
-}
-
 #perfil {
     width: 90%;
     max-width: 900px;
@@ -26,6 +22,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 50px;
 
     padding-bottom: 20px; 
@@ -33,17 +30,9 @@ main {
 }
 
 
-#foto-perfil-desktop {
+#foto-perfil-bio {
     width: 120px;
     height: 120px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 50%;
-}
-
-#foto-perfil-mobile {
-    width: 60px;
-    height: 60px;
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
@@ -148,12 +137,15 @@ gap: 20px;
 /*RESPONSIVO*/
 
 @media only screen and (max-width: 500px) {
-    .cabecalho-mobile {
-        display: initial;
+    #foto-perfil-bio {
+        width: 80px;
+        height: 80px;
     }
-
-    .cabecalho-desktop{
-        display: none;
+    .perfil-cabecalho{
+        gap: 20px;
     }
-
+    h2 {
+        display: flex;
+        justify-content: center;
+    }
 }
