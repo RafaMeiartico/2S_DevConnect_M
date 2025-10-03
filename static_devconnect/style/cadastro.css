@@ -17,6 +17,7 @@ main>div {
 
 
 .formulario-cadastro {
+    width: 87%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -24,7 +25,7 @@ main>div {
 
 .formulario-botao-azul{
     margin-top: 25px;
-    width: 87%;
+    width: 100%;
 }
 
 form>p {
