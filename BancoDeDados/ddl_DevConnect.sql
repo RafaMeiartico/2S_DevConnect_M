@@ -39,8 +39,11 @@ CREATE DATABASE bd_DevConect
 	,data_comentario	DATETIME2		NOT NULL
 	,id_publicacao      INT				NOT NULL
 
-	FOREIGN KEY (id_publicacao)	REFERENCES tb_publicacao(id_publicacao)
+	FOREIGN KEY (id_publicacao)	REFERENCES tb_publicacao(id_publicacao),
 	);
+
+	ALTER TABLE tb_comentario
+    ADD id_usuario INT;
 
 	ALTER TABLE tb_comentario
 	ALTER COLUMN data_comentario DATETIME2 NOT NULL;

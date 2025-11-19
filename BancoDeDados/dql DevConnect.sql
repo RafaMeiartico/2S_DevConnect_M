@@ -16,7 +16,7 @@ FROM tb_seguidor usuario
 JOIN tb_usuario seguidor ON usuario.id_seguidor = seguidor.id_usuario
 JOIN tb_usuario seguindo ON usuario.id_seguindo = seguindo.id_usuario;
 
---Exiba quantos seguidores possui um respectivo usuário 1
+--Exiba quantos seguidores possui um respectivo usuário (Nesse caso, o 1)
 SELECT COUNT(id_seguidor) AS qnt_seguidor FROM tb_seguidor
 Where id_seguindo = '1'
 
@@ -45,8 +45,6 @@ JOIN tb_usuario usuario        ON publicacao.id_usuario = usuario.id_usuario;
 SELECT COUNT(id_publicacao) AS qnt_curtida FROM tb_curtida
 Where id_publicacao = '1'
 
-SELECT * FROM tb_curtida
-
 --Exiba todos os usuarios que não fizeram uma publicacao 
 
 SELECT 
@@ -57,8 +55,6 @@ LEFT JOIN tb_publicacao PB ON Usuario.id_usuario = PB.id_usuario
 WHERE
 PB.id_usuario IS NULL;
 
-SELECT * FROM tb_publicacao
-
 --Exiba todos os usuarios que nao curtiram nada 
 SELECT
     Usuario.nome_usuario
@@ -68,4 +64,18 @@ LEFT JOIN
     tb_curtida Curtida ON Usuario.id_usuario = Curtida.id_usuario
 WHERE
     Curtida.id_usuario IS NULL;
+
+--Descurtir: remova uma curtida de um usuário há uma publicação.
+
+DELETE FROM tb_curtida
+WHERE id_usuario = 1
+  AND id_publicacao = 1;
+
+--Tornar a coluna e como chave composta na tabela comentário. 
+--Para evitar duplicidade de curtida do mesmo usuário e publicação.
+
+ALTER TABLE tb_comentario
+ADD CONSTRAINT PK_Comentario_UsuarioPublicacao PRIMARY KEY (id_usuario, id_publicacao);
+
+SELECT * FROM tb_comentario;
 
